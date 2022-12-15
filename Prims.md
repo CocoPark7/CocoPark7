@@ -1,18 +1,32 @@
 package prims;
+
 import java.util.Arrays;
+
 public class prims
+
  {
+
  public void Prim(int G[][], int V) 
+
  {
+
  int INF = 9999999;
 
+
  int no_edge; 
+
  boolean[] selected = new boolean[V];
+
  Arrays.fill(selected, false);
+
  no_edge = 0;
+
  selected[0] = true;
+
  System.out.println("Edge:- Weight:-");
+
  while (no_edge < V - 1) 
+
  {
  int min = INF;
  int x = 0; // row number
