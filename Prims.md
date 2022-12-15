@@ -5,6 +5,7 @@ public class prims
  public void Prim(int G[][], int V) 
  {
  int INF = 9999999;
+
  int no_edge; 
  boolean[] selected = new boolean[V];
  Arrays.fill(selected, false);
@@ -19,6 +20,13 @@ public class prims
  for (int i = 0; i < V; i++) 
  {
  if (selected[i] == true) 
+
+
+
+
+
+
+
  {
  for (int j = 0; j < V; j++) 
  {
@@ -36,6 +44,7 @@ public class prims
   }
  }
  CODE :
+
  System.out.println(x + " - " + y + " : " + G[x][y]);
  selected[y] = true;
  no_edge++;
